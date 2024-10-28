@@ -19,19 +19,39 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-.user-status {
+.user-profile {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  gap: 10px;
 }
 
-.user-status img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+.profile-picture {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px; solid #e0e0e0;
+  object-fit: cover;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: 000;
+  margin: 0;
+}
+
+.user-status {
+  font-size: 14px;
+  color: #7a7a7a;
+  margin: 0;
 }
 
 .contact-list {
@@ -45,12 +65,14 @@ body {
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid #ddd;
+  justify-content: space-between;
 }
 
 .contact-item img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin-right: 10px;
+  border-radius: 50%;
 }
 
 .contact-info {
